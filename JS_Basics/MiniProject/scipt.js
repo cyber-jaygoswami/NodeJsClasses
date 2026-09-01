@@ -1,5 +1,5 @@
 const button = document.querySelector('#submit');
-
+const DataDiv = document.createElement("div");
 function apiCall(username){
     const url = "https://api.github.com/users/" + username;
 
@@ -12,7 +12,7 @@ function apiCall(username){
         if(this.readyState ===4 && this.status === 200){
             const data = JSON.parse(this.responseText);
             console.log(data);
-            const DataDiv = document.createElement("div");
+            
             DataDiv.innerHTML = `
             <h3> Followers : </h3>
             <b>${data.followers}</b>
