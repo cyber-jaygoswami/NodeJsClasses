@@ -1,4 +1,4 @@
-const process= require('process'); // optional because it's global object
+const process= require('process'); 
 
 // //########################### Properties
 console.log(`Proccess Architecture : ${process.arch}`);
