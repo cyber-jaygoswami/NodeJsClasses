@@ -62,3 +62,23 @@ console.log(obj6);
 
 console.log(Object.keys(obj6));
 console.log(Object.values(obj6));
+
+
+
+const data = {
+    name : 'Jay Goswami',
+    age : 23,
+    subject : "MERN",
+    address : {
+        city : "PBR",
+        street : 7
+
+    }
+}
+
+const myname = data.name;
+const myage = data.age;
+
+const {age} = data;
+
+console.log(myname);

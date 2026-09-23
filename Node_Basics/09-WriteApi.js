@@ -8,6 +8,7 @@ http.createServer((req,res)=>{
                 res.setHeader('Content-Type','application/json');
                 res.write(`${data}`);
                 res.end();
+                
             }
             else{
                 res.write("Something went wrong");
@@ -46,4 +47,4 @@ http.createServer((req,res)=>{
         res.write("Done");
         res.end();
     }
-}).listen(8080);
+}).listen(8000);
