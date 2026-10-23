@@ -28,6 +28,11 @@ user.on("Login",loginCheck);
 user.on("Login",Redirect);
 user.on("Login",sendMail);
 
+// user.off("Login",sendMail);
+// user.removeAllListeners("Login");
+
+
+
 // User click on Register button
 user.emit("Register");
 
@@ -49,3 +54,5 @@ user.emit("FileUpload","resume2.pdf")
 // const numberOfListner = user.listenerCount("Register");
 const UserListners = user.listeners("Login");
 console.log(UserListners);
+
+console.log(user.eventNames());
